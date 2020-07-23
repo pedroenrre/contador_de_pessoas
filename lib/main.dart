@@ -15,7 +15,7 @@ class _HomeState extends State<Home> {
 
   void _changePeople(int delta) {
     setState(() {
-      if (_people + delta < 11) {
+      if (_people + delta < 11 && _people + delta > -2) {
         _people += delta;
       }
       if (_people < 0) {
